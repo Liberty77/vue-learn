@@ -22,10 +22,10 @@
         <button v-on:click="reverseMessage">逆转消息</button>
         <br> 响应式表单输入: <input type="text" v-model="message">
         <br>
-        <ol>
-            <!-- <todo-item v-for="item in groceryList" v-bind: todo="item" v-bind: key="item.id">
-            </todo-item> -->
-        </ol>
+        <!-- <ol>
+            <todo-item v-for="item in groceryList" v-bind: todo="item" v-bind: key="item.id">
+            </todo-item>
+        </ol> -->
     </div>
     <script>
         Vue.component('todo-item', {
@@ -57,7 +57,7 @@
                 }]
             },
             methods: {
-                reverseMessage: function() {
+                reverseMessage: function () {
                     this.message = this.message.split('').reverse().join('');
                 }
             }
